@@ -1,104 +1,58 @@
+# Basic app information
 name: rest_chooser
 description: "A restaurant decision-making app that helps you choose where to eat when you (or your partner) can't decide. Features include random selection and head-to-head comparison modes."
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-# In Windows, build-name is used as the major, minor, and patch parts
-# of the product and file versions while build-number is used as the build suffix.
+# Prevents publishing to pub.dev (since this is a private app)
+publish_to: 'none'
+
+# Version format is MAJOR.MINOR.PATCH+BUILD_NUMBER
 version: 1.0.0+1
 
+# Dart SDK constraints
 environment:
   sdk: ^3.7.2
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
+# External packages the app depends on
 dependencies:
   flutter:
     sdk: flutter
-  shared_preferences: ^2.1.0 # Add the shared_preferences package
+  # Used for persisting user preferences and restaurant data
+  shared_preferences: ^2.1.0
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+  # iOS-style icons for the app
   cupertino_icons: ^1.0.8
 
+# Dependencies only needed during development
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+  # Recommended lints for good coding practices
   flutter_lints: ^5.0.0
-  flutter_launcher_icons: ^0.14.3  # For generating app icons
-  flutter_native_splash: ^2.3.13  # For splash screen
+  # Tools for generating app icons across platforms
+  flutter_launcher_icons: ^0.14.3
+  # Tool for creating native splash screens
+  flutter_native_splash: ^2.3.13
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
+# Flutter-specific configurations
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
+  # Enables use of Material Design widgets
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
+  # Files to include in the app bundle
   assets:
-    - assets/restaurants.json
-    - assets/icon/
-    - assets/store_graphics/
+    - assets/restaurants.json  # Restaurant data
+    - assets/icon/            # App icon assets
+    - assets/store_graphics/  # Store listing graphics
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/to/resolution-aware-images
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/to/asset-from-package
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
-
-# App icon configuration
+# Configuration for generating app icons
 flutter_icons:
-  android: true
-  ios: true
-  image_path: "assets/icon/app_icon.png"
-  adaptive_icon_background: "#40E0D0" # Turquoise color from your app
-  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+  android: true  # Generate Android icons
+  ios: true      # Generate iOS icons
+  image_path: "assets/icon/app_icon.png"  # Source image for icons
+  adaptive_icon_background: "#40E0D0"     # Android adaptive icon background color
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"  # Android adaptive icon foreground
+  # Generate icons for web and desktop platforms
   web:
     generate: true
   windows:
@@ -106,10 +60,10 @@ flutter_icons:
   macos:
     generate: true
 
-# Splash screen configuration
+# Configuration for splash screen appearance
 flutter_native_splash:
-  color: "#40E0D0"
+  color: "#40E0D0"  # Main splash screen background color
   android_12:
-    color: "#40E0D0"
-  ios: true
-  web: true
+    color: "#40E0D0"  # Android 12+ splash screen color
+  ios: true   # Enable splash screen for iOS
+  web: true   # Enable splash screen for web
