@@ -7,5 +7,5 @@ A restaurant decision-making app that helps you choose where to eat when you (or
 - Random restaurant selection
 - Head-to-head comparison mode
 - Customizable restaurant list
-- Preference saving
+- Custom restaurant saving
 - Beautiful modern UI
