@@ -12,14 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      # Set up Node.js
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-          
-      # Install npm dependencies
-      - run: npm install
-      
       # Set up Flutter
       - uses: subosito/flutter-action@v2
         with:
