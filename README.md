@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/4b47a03d-4b9d-4882-92c3-9533fd4f440b)
+![image](https://github.com/user-attachments/assets/a7669239-bff7-47f4-8386-d59ad68ff99d)
+![image](https://github.com/user-attachments/assets/1aa4df8f-317c-43d5-87b1-ce070bd14e0f)
+
 # IDK-What-Do-You-Want
 
 [![Deploy to Firebase Hosting](https://github.com/SpencerSmithSite/IDK-what-do-YOU-want/actions/workflows/firebase-hosting-merge.yml/badge.svg)](https://github.com/SpencerSmithSite/IDK-what-do-YOU-want/actions/workflows/firebase-hosting-merge.yml)
