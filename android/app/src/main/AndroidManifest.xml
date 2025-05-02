@@ -1,8 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="rest_chooser"
+        android:label="IDK What Do You Want"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="true"
+        android:fullBackupContent="true">
         <activity
             android:name=".MainActivity"
             android:exported="true"

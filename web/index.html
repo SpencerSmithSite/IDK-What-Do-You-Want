@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -18,21 +19,50 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description"
+    content="IDK What Do You Want - A restaurant decision-making app that helps you choose where to eat when you can't decide.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="rest_chooser">
+  <meta name="apple-mobile-web-app-title" content="IDK What Do You Want">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-  <title>rest_chooser</title>
+  <!-- Rich Link Preview -->
+  <meta property="og:title" content="IDK What Do You Want">
+  <meta property="og:description"
+    content="A restaurant decision-making app that helps you choose where to eat when you can't decide.">
+  <meta property="og:image" content="icons/Icon-512.png">
+  <meta property="og:url" content="https://idk-what-do-you-want-6dd19.web.app">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IDK What Do You Want">
+  <meta name="twitter:description"
+    content="A restaurant decision-making app that helps you choose where to eat when you can't decide.">
+  <meta name="twitter:image" content="icons/Icon-512.png">
+
+  <title>IDK What Do You Want</title>
   <link rel="manifest" href="manifest.json">
+
+  <script>
+    // Register service worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
 </head>
+
 <body>
   <script src="flutter_bootstrap.js" async></script>
 </body>
+
 </html>

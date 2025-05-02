@@ -1,13 +1,22 @@
 {
-    "name": "rest_chooser",
-    "short_name": "rest_chooser",
+    "name": "IDK What Do You Want",
+    "short_name": "IDK What Do You Want",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "description": "A restaurant decision-making app that helps you choose where to eat when you can't decide.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
+    "scope": "/",
+    "categories": ["food", "utilities"],
+    "screenshots": [
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
     "icons": [
         {
             "src": "icons/Icon-192.png",

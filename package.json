@@ -1,0 +1,10 @@
+{
+  "name": "idk-what-do-you-want",
+  "version": "1.0.0",
+  "description": "A restaurant decision-making app that helps you choose where to eat",
+  "scripts": {
+    "build": "flutter build web",
+    "deploy": "firebase deploy --only hosting"
+  },
+  "private": true
+} 
