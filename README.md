@@ -2,7 +2,7 @@
 
 [![Deploy to Firebase Hosting](https://github.com/SpencerSmithSite/IDK-what-do-YOU-want/actions/workflows/firebase-hosting-merge.yml/badge.svg)](https://github.com/SpencerSmithSite/IDK-what-do-YOU-want/actions/workflows/firebase-hosting-merge.yml)
 
-A restaurant decision-making app that helps you choose where to eat when you (or your partner) can't decide. Built with Flutter.
+A restaurant decision-making app that helps you choose where to eat when you (or your partner) can't decide. Built with Flutter and deployed to Firebase Hosting.
 
 ## Features
 
